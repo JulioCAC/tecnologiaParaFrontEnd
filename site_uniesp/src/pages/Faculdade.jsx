@@ -27,7 +27,7 @@ const InfoCard = ({ imgSrc, imgAlt, title, description }) => (
       style={{
         width: '100%',
         height: '180px', // Altura fixa para todas as imagens
-        objectFit: 'cover', // Ajusta a imagem para cobrir o espaço mantendo a proporção
+        objectFit: 'cover',
         borderRadius: '8px',
         marginBottom: '16px',
       }}
@@ -39,7 +39,7 @@ const InfoCard = ({ imgSrc, imgAlt, title, description }) => (
   </Paper>
 );
 
-const Inicial = () => {
+const Faculdade = () => {
   return (
     <Box
       sx={{
@@ -50,6 +50,9 @@ const Inicial = () => {
         borderRadius: '8px',
       }}
     >
+      <Typography variant="h3">
+        A Faculdade
+      </Typography>
       <Paper
         elevation={3}
         sx={{
@@ -61,44 +64,45 @@ const Inicial = () => {
         }}
       >
         <Typography variant="body1" paragraph>
-          A Faculdade UNIESP é uma instituição comprometida em fornecer educação de qualidade, com foco no desenvolvimento profissional e pessoal dos alunos. Nossos cursos são projetados para atender às demandas do mercado de trabalho e preparar nossos alunos para os desafios da vida profissional.
+          A Faculdade UNIESP é uma instituição comprometida com a excelência no ensino e no desenvolvimento de habilidades para o mercado de trabalho. Com uma infraestrutura moderna e professores altamente qualificados, oferecemos um ambiente vibrante e acolhedor para que nossos alunos possam crescer e alcançar seus objetivos.
         </Typography>
         <Typography variant="body1" paragraph>
-          Contamos com uma equipe de professores qualificados, uma infraestrutura moderna e uma metodologia de ensino que valoriza o aprendizado prático. Oferecemos diversos cursos nas áreas de tecnologia, negócios, saúde, entre outros, sempre com o objetivo de formar profissionais capacitados e comprometidos.
-        </Typography>
-        <Typography variant="body1" paragraph>
-          A seguir, conheça mais sobre as áreas e as oportunidades que a Faculdade UNIESP oferece para você.
+          Nossos cursos são projetados para formar profissionais capacitados e conscientes de seu papel na sociedade. Junte-se a nós e faça parte de uma comunidade de aprendizado contínuo e inovação.
         </Typography>
       </Paper>
 
       <Grid container spacing={4}>
+        {/* Primeira linha de cards */}
         <Grid item xs={12} sm={6} md={4}>
           <InfoCard
             imgSrc="https://images.unsplash.com/photo-1556761175-4b46a572b786?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGNvbGxlZ2V8ZW58MHx8fHwxNjI2NzUwNzY0&ixlib=rb-1.2.1&q=80&w=400"
             imgAlt="Estudantes interagindo no campus universitário"
             title="Vida no Campus"
-            description="Um ambiente vibrante e acolhedor, com atividades que promovem o desenvolvimento pessoal e social dos alunos."
+            description="Um ambiente vibrante, cheio de oportunidades para aprendizado, amizade e crescimento pessoal."
           />
         </Grid>
+
         <Grid item xs={12} sm={6} md={4}>
           <InfoCard
             imgSrc="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGxpYnJhcnl8ZW58MHx8fHwxNjI2NzUwODE2&ixlib=rb-1.2.1&q=80&w=400"
             imgAlt="Interior da biblioteca da faculdade"
             title="Biblioteca"
-            description="Uma biblioteca com um acervo completo e atualizado, incluindo livros, revistas e recursos digitais para pesquisa e estudo."
+            description="Nossa biblioteca moderna oferece uma vasta coleção de livros, revistas e recursos digitais para pesquisa."
           />
         </Grid>
+
         <Grid item xs={12} sm={6} md={4}>
           <InfoCard
             imgSrc="https://images.unsplash.com/photo-1652974731232-efc86a9bd985?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             imgAlt="Prédio principal da Faculdade UNIESP"
             title="Prédio Principal"
-            description="O centro de nossa instituição, com salas de aula modernas e laboratórios equipados para atender às necessidades dos cursos."
+            description="O coração da nossa instituição, com salas de aula modernas, laboratórios e espaços de convivência."
           />
         </Grid>
       </Grid>
 
       <Grid container spacing={4} sx={{ mt: 4 }}>
+        {/* Segunda linha de cards */}
         <Grid item xs={12} sm={6}>
           <Paper
             elevation={3}
@@ -114,10 +118,11 @@ const Inicial = () => {
               Parcerias com Empresas
             </Typography>
             <Typography variant="body2">
-              A UNIESP mantém parcerias com diversas empresas, permitindo que nossos alunos tenham acesso a oportunidades de estágio e emprego logo após a graduação. Essas parcerias são fundamentais para integrar os estudantes ao mercado e para oferecer uma experiência educacional alinhada com a prática profissional.
+              A UNIESP mantém parcerias com diversas empresas, permitindo que nossos alunos tenham acesso a oportunidades de estágio e emprego logo após a graduação. Essas parcerias são fundamentais para integrar os estudantes ao mercado e oferecer uma experiência educacional alinhada com a prática profissional.
             </Typography>
           </Paper>
         </Grid>
+
         <Grid item xs={12} sm={6}>
           <Paper
             elevation={3}
@@ -133,7 +138,7 @@ const Inicial = () => {
               Compromisso com a Educação
             </Typography>
             <Typography variant="body2">
-              A UNIESP se dedica a oferecer uma educação acessível e de qualidade, acreditando que o conhecimento transforma vidas. Nossos programas são desenhados para preparar os alunos não apenas para carreiras, mas para que eles possam fazer contribuições significativas para a sociedade.
+              A UNIESP se dedica a oferecer uma educação acessível e de qualidade, acreditando que o conhecimento transforma vidas. Nossos programas são desenhados para preparar os alunos não apenas para carreiras, mas também para fazer contribuições significativas para a sociedade.
             </Typography>
           </Paper>
         </Grid>
@@ -142,4 +147,4 @@ const Inicial = () => {
   );
 };
 
-export default Inicial;
+export default Faculdade;
