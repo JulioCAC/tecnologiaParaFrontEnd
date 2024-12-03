@@ -1,9 +1,10 @@
 {
   "noticias": [
     {
-      "id": "1",
       "titulo": "Tecnologia avança com IA Generativa",
-      "texto": "Pesquisas em IA generativa impulsionam setores como saúde e entretenimento, trazendo novos desafios éticos e de regulamentação."
+      "subtitulo": "",
+      "texto": "Pesquisas em IA generativa impulsionam setores como saúde e entretenimento, trazendo novos desafios éticos e de regulamentação.",
+      "id": "1"
     },
     {
       "id": "2",

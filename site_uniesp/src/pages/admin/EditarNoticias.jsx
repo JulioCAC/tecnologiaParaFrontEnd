@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import axios from 'axios'
 import { useParams, useNavigate } from 'react-router-dom'
+import axios from 'axios'
 import { Button, TextField, Typography, Box } from '@mui/material'
 
+// URL base da API
 const url = "http://localhost:3000/noticias"
 
 const EditarNoticia = () => {
@@ -30,7 +31,8 @@ const EditarNoticia = () => {
     e.preventDefault()
     try {
       await axios.put(`${url}/${id}`, { titulo, subtitulo, texto })
-      navigate('/admin-noticias')
+      // Redireciona para a página admin-noticias com a mensagem de sucesso
+      navigate('/admin-noticias', { state: { successMessage: 'Notícia editada com sucesso!' } })
     } catch (error) {
       console.error("Erro ao editar a notícia: ", error)
     }
