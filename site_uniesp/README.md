@@ -4,7 +4,41 @@ Este projeto é uma aplicação React configurada com o Vite, que utiliza o json
 
 ## Estrutura das pastas
 
-site_uniesp ├── data │ └── db.json # Banco de dados simulado para JSON Server ├── node_modules # Dependências do projeto ├── public # Arquivos estáticos como imagens e ícones │ ├── uniesp.jpg # Logo do Sistema │ └── VESTIBULAR.gif # Banner publicitário ├── src │ ├── assets # Recursos estáticos específicos do servidor │ ├── components # Componentes reutilizáveis │ │ ├── BannerAd.jsx # Componente do banner publicitário │ │ └── Navbar.jsx # Componente de navegação superior │ ├── pages # Páginas do sistema │ │ ├── admin # Páginas administrativas │ │ │ ├── AdminNoticias.jsx # Dashboard de administração de notícias │ │ │ ├── CadastroNoticias.jsx # Tela para cadastrar novas notícias │ │ │ └── EditarNoticias.jsx # Tela para editar notícias existentes │ │ ├── DpoLgpd.jsx # Página de políticas de privacidade (LGPD) │ │ ├── Faculdade.jsx # Página com informações sobre a faculdade │ │ ├── Inicial.jsx # Página inicial da área pública │ │ ├── Noticias.jsx # Página pública de listagem de notícias │ │ └── VisualizaNoticia.jsx # Página para visualizar detalhes de uma notícia │ ├── App.css # Estilos globais da aplicação │ ├── App.jsx # Componente raiz que integra a aplicação │ ├── index.css # Estilização inicial global │ └── main.jsx # Ponto de entrada principal da aplicação ├── .gitignore # Arquivo para ignorar arquivos no repositório ├── eslint.config.js # Configuração do ESLint ├── index.html # Arquivo HTML raiz ├── package-lock.json # Versões exatas das dependências ├── package.json # Dependências do projeto ├── vite.config.js # Configuração do Vite para build e desenvolvimento └── README.md # Documentação do projeto
+A estrutura de diretórios do projeto é organizada da seguinte forma:
+
+- **`site_uniesp`**
+  - **`data`**
+    - `db.json` - Banco de dados simulado para JSON Server
+  - **`node_modules`** - Dependências do projeto
+  - **`public`** - Arquivos estáticos como imagens e ícones
+    - `uniesp.jpg` - Logo do Sistema
+    - `VESTIBULAR.gif` - Banner publicitário
+  - **`src`** - Código-fonte da aplicação
+    - **`assets`** - Recursos estáticos específicos do servidor
+    - **`components`** - Componentes reutilizáveis
+      - `BannerAd.jsx` - Componente do banner publicitário
+      - `Navbar.jsx` - Componente de navegação superior
+    - **`pages`** - Páginas do sistema
+      - **`admin`** - Páginas administrativas
+        - `AdminNoticias.jsx` - Dashboard de administração de notícias
+        - `CadastroNoticias.jsx` - Tela para cadastrar novas notícias
+        - `EditarNoticias.jsx` - Tela para editar notícias existentes
+      - `DpoLgpd.jsx` - Página de políticas de privacidade (LGPD)
+      - `Faculdade.jsx` - Página com informações sobre a faculdade
+      - `Inicial.jsx` - Página inicial da área pública
+      - `Noticias.jsx` - Página pública de listagem de notícias
+      - `VisualizaNoticia.jsx` - Página para visualizar detalhes de uma notícia
+    - `App.css` - Estilos globais da aplicação
+    - `App.jsx` - Componente raiz que integra a aplicação
+    - `index.css` - Estilização inicial global
+    - `main.jsx` - Ponto de entrada principal da aplicação
+  - `.gitignore` - Arquivo para ignorar arquivos no repositório
+  - `eslint.config.js` - Configuração do ESLint
+  - `index.html` - Arquivo HTML raiz
+  - `package-lock.json` - Versões exatas das dependências
+  - `package.json` - Dependências do projeto
+  - `vite.config.js` - Configuração do Vite para build e desenvolvimento
+  - `README.md` - Documentação do projeto
 
 ## Bibliotecas
 
@@ -43,4 +77,40 @@ As seguintes dependências são utilizadas para construir a interface, gerenciar
     npm run dev
 
 5. O servidor de desenvolvimento será iniciado, e você pode acessar a aplicação no navegador em http://localhost:5173.
+
+## Visualização da estrutura mais legível no VSCode
+📦 site_uniesp
+├── 📂 data
+│   └── 📄 db.json             -> Banco de dados simulado para JSON Server
+├── 📂 node_modules            -> Pasta que contém todas as dependências do projeto instaladas
+├── 📂 public                  -> Recursos estáticos como imagens e ícones
+│   └── 📄 uniesp.jpg          -> Logo do Sistema
+│   └── 📄 VESTIBULAR.gif      -> Banner publicitário 
+├── 📂 src
+│   ├── 📂 assets              -> Recursos estáticos como imagens e ícones exclusivos do servidor
+│   ├── 📂 components          -> Componentes reutilizáveis da interface
+│   │   ├── 📄 BannerAd.jsx    -> Componente do banner publicitário
+│   │   └── 📄 Navbar.jsx      -> Componente de navegação superior
+│   ├── 📂 pages
+│   │   ├── 📂 admin           -> Páginas administrativas do sistema
+│   │   │   ├── 📄 AdminNoticias.jsx       -> Dashboard de administração de notícias
+│   │   │   ├── 📄 CadastroNoticias.jsx    -> Tela para cadastrar novas notícias
+│   │   │   ├── 📄 EditarNoticias.jsx      -> Tela para editar notícias existentes
+│   │   ├── 📄 DpoLgpd.jsx             -> Página de políticas de privacidade (LGPD)
+│   │   ├── 📄 Faculdade.jsx           -> Página com informações sobre a faculdade
+│   │   ├── 📄 Inicial.jsx             -> Página inicial da área pública do site
+│   │   ├── 📄 Noticias.jsx            -> Página pública de listagem de notícias
+│   │   └── 📄 VisualizaNoticia.jsx    -> Página para visualizar detalhes de uma notícia específica
+│   ├── 📄 App.css             -> Estilos globais da aplicação
+│   ├── 📄 App.jsx             -> Componente raiz(pai) que integra a aplicação
+│   ├── 📄 index.css           -> Estilização inicial aplicada globalmente
+│   └── 📄 main.jsx            -> Ponto de entrada principal da aplicação
+├── 📄 .gitignore              -> Arquivo para ignorar arquivos no repositório Git
+├── 📄 eslint.config.js        -> Configuração do ESLint
+├── 📄 index.html              -> Arquivo HTML raiz
+├── 📄 package-lock.json       -> Registra as versões exatas das dependências do projeto
+├── 📄 package.json            -> Configuração das dependências do projeto
+├── 📄 vite.config.js          -> Configuração do Vite para build e desenvolvimento
+└── 📄 README.md               -> Documentação do projeto
+
 
