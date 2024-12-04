@@ -27,7 +27,7 @@ const AdminNoticias = () => {
     fetchData()
   }, [])
 
-  // Verifica se há uma mensagem de sucesso na navegação
+ 
   useEffect(() => {
     if (location.state?.successMessage) {
       setAlertMessage(location.state.successMessage)
@@ -64,10 +64,8 @@ const AdminNoticias = () => {
   }
 
   const editarNoticia = (noticia) => {
-    // Navegar para a página de edição e passar a mensagem de sucesso
-    navigate(`/editar-noticia/${noticia.id}`, {
-      state: { successMessage: "Notícia editada com sucesso!" }
-    })
+ 
+    navigate(`/editar-noticia/${noticia.id}`)
   }
 
   return (
@@ -83,7 +81,7 @@ const AdminNoticias = () => {
             <Button 
               variant="contained" 
               color="secondary" 
-              onClick={() => editarNoticia(noticia)} // Chamando a função de editar
+              onClick={() => editarNoticia(noticia)} 
               sx={{ mr: 1 }}
             >
               Editar

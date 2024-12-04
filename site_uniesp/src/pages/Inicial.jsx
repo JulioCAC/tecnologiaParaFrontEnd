@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Grid, Paper } from '@mui/material';
 
-// Componente reutilizável para Cards
+
 const InfoCard = ({ imgSrc, imgAlt, title, description }) => (
   <Paper
     elevation={3}
@@ -10,7 +10,7 @@ const InfoCard = ({ imgSrc, imgAlt, title, description }) => (
       backgroundColor: '#ffffff',
       borderRadius: '8px',
       textAlign: 'center',
-      minHeight: '380px', // Altura mínima uniforme
+      minHeight: '380px', 
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
@@ -26,8 +26,8 @@ const InfoCard = ({ imgSrc, imgAlt, title, description }) => (
       loading="lazy"
       style={{
         width: '100%',
-        height: '180px', // Altura fixa para todas as imagens
-        objectFit: 'cover', // Ajusta a imagem para cobrir o espaço mantendo a proporção
+        height: '180px', 
+        objectFit: 'cover', 
         borderRadius: '8px',
         marginBottom: '16px',
       }}
@@ -43,8 +43,8 @@ const Inicial = () => {
   return (
     <Box
       sx={{
-        maxWidth: '1200px', // Centraliza o conteúdo
-        margin: '0 auto', // Centraliza horizontalmente
+        maxWidth: '1200px',
+        margin: '0 auto', 
         p: { xs: 2, md: 4 },
         backgroundColor: '#f0f0f0',
         borderRadius: '8px',

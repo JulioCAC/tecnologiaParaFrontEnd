@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Grid, Paper } from '@mui/material';
 
-// Componente reutilizável para Cards
+
 const InfoCard = ({ imgSrc, imgAlt, title, description }) => (
   <Paper
     elevation={3}

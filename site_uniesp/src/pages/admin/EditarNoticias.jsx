@@ -31,7 +31,6 @@ const EditarNoticia = () => {
     e.preventDefault()
     try {
       await axios.put(`${url}/${id}`, { titulo, subtitulo, texto })
-      // Redireciona para a página admin-noticias com a mensagem de sucesso
       navigate('/admin-noticias', { state: { successMessage: 'Notícia editada com sucesso!' } })
     } catch (error) {
       console.error("Erro ao editar a notícia: ", error)

@@ -16,22 +16,22 @@ const CadastroNoticia = () => {
     e.preventDefault()
     try {
       await axios.post(url, { titulo, subtitulo, texto })
-      setIsModalOpen(true) // Abre o modal de confirmação
+      setIsModalOpen(true) 
     } catch (error) {
       console.error("Erro ao cadastrar a notícia: ", error)
     }
   }
 
   const handleCadastrarOutra = () => {
-    setIsModalOpen(false) // Fecha o modal
-    setTitulo("") // Limpa os campos
+    setIsModalOpen(false) 
+    setTitulo("") 
     setSubtitulo("")
     setTexto("")
   }
 
   const handleIrParaAdmin = () => {
     setIsModalOpen(false)
-    navigate('/admin-noticias') // Redireciona para a página de administração
+    navigate('/admin-noticias') 
   }
 
   return (
